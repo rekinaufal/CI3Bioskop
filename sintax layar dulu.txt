@@ -1,0 +1,32 @@
+<form action="<?php echo site_url('Welcome/Layar'); ?>" method="post" enctype="multipart/form-data">
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <title>Layar</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    </head>
+<body>
+<div class="container">
+  <h2>Bioskop Sekai</h2>
+  <p>Data Pembelian tiket</p>              
+  <table id="table" class="table table-hover table-striped">
+    <thead>
+      <tr>
+        <th>No</th>
+        <th>Kode Pembelian</th>
+        <th>Judul Film</th>
+        <th>Jam Tayang</th>
+        <th>Harga</th>
+        <th>Studio</th>
+        <th>Pilih Kursi</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+</form>
+<script src="<?php echo base_url('temp/bower_components/jquery/dist/jquery.min.js');?>"></script>
