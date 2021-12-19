@@ -111,14 +111,13 @@ class Welcome extends CI_Controller {
 			if($up_foto){
 				$update['gambar']= $up_foto;
 			}
-          	 $this->MSudi->UpdateData('tbl_film','kd_film',$kd_film,$update);
-		 	 redirect(site_url('Welcome/DataFilm'));
-		  }
-			else
-			{
-				$this->session->sess_destroy();
-				redirect(site_url('Login'));
-			}	
+          	$this->MSudi->UpdateData('tbl_film','kd_film',$kd_film,$update);
+		 	redirect(site_url('Welcome/DataFilm'));
+		 }else
+		 {
+			$this->session->sess_destroy();
+			redirect(site_url('Login'));
+		}	
 	}
 
 	public function DeleteDataFilm($id)
